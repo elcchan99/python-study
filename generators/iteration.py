@@ -21,6 +21,25 @@ class countdown:
         return counterdown_iter(self.start)
 
 
+def gen_countdown(n: int):
+    print("Counting down from", n)
+    while n > 0:
+        yield n
+        n -= 1
+
+
 if __name__ == "__main__":
+    print("Iterator version of countdown:")
     for i in countdown(5):
         print(i, end=" ")
+    print()
+
+    print("Generator version of countdown:")
+    g = gen_countdown(5)
+    print(g)
+    print(g.__next__())
+    print(g.__next__())
+    print(g.__next__())
+    print(g.__next__())
+    print(g.__next__())
+    print(g.__next__())
