@@ -26,7 +26,8 @@ def apache_log(lines: Iterator[str]) -> Iterator[dict]:
 
     # Convert log line to dictionary
     log_dicts = (dict(zip(COL_NAMES, t)) for t in tuples)
+
     # Map fields type
     log_dicts = field_map(log_dicts, "bytes", lambda s: int(s) if s != "-" else 0)
     log_dicts = field_map(log_dicts, "status", int)
-    yield from log_dicts
+    return log_dicts
