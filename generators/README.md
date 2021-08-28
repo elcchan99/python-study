@@ -118,7 +118,7 @@ for e in z:
     print(e)
 ```
 
-Multiplexing
+#### 8.1 Multiplexing
 
 - multiple generators
 - real time productin values as they arrive
@@ -146,3 +146,18 @@ from even:  18
 ```
 
 With the `time.sleep`, you can see the result generator takes value from sources interchangablely.
+
+#### 8.2 Broadcasting
+
+```shell
+> python 08_2_broadcast.py
+Ada got 155.218.119.91
+Bob got 155.218.119.91
+Cat got 155.218.119.91
+Ada got 206.229.250.64
+Bob got 206.229.250.64
+Cat got 206.229.250.64
+Ada got 213.190.121.174
+Bob got 213.190.121.174
+Cat got 213.190.121.174
+```
