@@ -210,3 +210,13 @@ Total bytes 184661
 ```
 
 The two threads are running concurrently. They both sources from broadcasted logs.
+
+### 9. Various programming tricks and debugging
+
+#### 9.1 trace
+
+```shell
+python 09_1_trace.py
+{'host': '212.27.13.161', 'referrer': '-', 'user': '-', 'datetime': '28/Aug/2021:16:11:14 +0800', 'method': 'GET', 'request': '/apps/cart.jsp?appID=5722', 'proto': 'HTTP/1.0', 'status': 404, 'bytes': 4918}
+{'host': '15.75.60.223', 'referrer': '-', 'user': '-', 'datetime': '28/Aug/2021:16:11:14 +0800', 'method': 'GET', 'request': '/wp-content', 'proto': 'HTTP/1.0', 'status': 404, 'bytes': 4988}
+```
