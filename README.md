@@ -2,4 +2,4 @@
 
 In-depth studies in Python
 
-1. [Generators](./generator/README.md)
+1. [Generators](generators/README.md)
