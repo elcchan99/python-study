@@ -161,3 +161,52 @@ Ada got 213.190.121.174
 Bob got 213.190.121.174
 Cat got 213.190.121.174
 ```
+
+#### 8.3 Consumer thread
+
+```shell
+ython 08_3_consumer_thread.py
+404 28/Aug/2021:16:11:14 +0800 /apps/cart.jsp?appID=5722
+404 28/Aug/2021:16:11:14 +0800 /wp-content
+Total bytes 4982
+404 28/Aug/2021:16:11:17 +0800 /app/main/posts
+Total bytes 9934
+Total bytes 14960
+Total bytes 19878
+Total bytes 24866
+Total bytes 29897
+Total bytes 34900
+Total bytes 39911
+404 28/Aug/2021:16:11:18 +0800 /posts/posts/explore
+Total bytes 44839
+Total bytes 49790
+Total bytes 54802
+Total bytes 59788
+Total bytes 64743
+Total bytes 69734
+Total bytes 74725
+Total bytes 79745
+Total bytes 84727
+Total bytes 89772
+Total bytes 94753
+Total bytes 99745
+Total bytes 104740
+Total bytes 109805
+Total bytes 114847
+Total bytes 119795
+Total bytes 124861
+Total bytes 129860
+Total bytes 134862
+Total bytes 139814
+Total bytes 144797
+Total bytes 149807
+Total bytes 154774
+Total bytes 159703
+Total bytes 164676
+Total bytes 169751
+Total bytes 174706
+Total bytes 179681
+Total bytes 184661
+```
+
+The two threads are running concurrently. They both sources from broadcasted logs.
