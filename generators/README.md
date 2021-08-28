@@ -39,7 +39,7 @@ Traceback (most recent call last):
 StopIteration
 ```
 
-### 3. Parsing and processing data
+### 3. Fun with files and directories
 
 Generate source data: apache logs
 
@@ -58,4 +58,16 @@ Create a generator to list all logs from directory
 >>> next(lines)
 >>> next(lines)
 >>> next(lines)
+```
+
+### 4. Parsing and processing data
+
+```python
+>>> from linesdir import lines_from_dir
+>>> from apachelog import apache_log
+>>> lines = lines_from_dir(r"access_log_*.log", "www")
+>>> logs = apache_log(lines)
+>>> next(logs)
+>>> next(logs)
+>>> next(logs)
 ```
