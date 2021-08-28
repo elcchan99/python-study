@@ -79,18 +79,26 @@ You shall see date print in the terminal which runs Python
 
 ### 7. Extending the pipeline
 
+#### 7.1 Sender and receiver
+
 Open two terminals
 
 One would start a consumer that listens to localhost:15000
 
 ```bash
-python 06_1_consumer.py
+python 07_1_consumer.py
 ```
 
 Another would send apache log dict to localost:15000
 
 ```bash
-python 06_1_producer.py
+python 07_1_producer.py
 ```
 
 You would see apache log dict is printed in consumer terminal.
+
+#### 7.2 Multiple threads
+
+```bash
+python 07_2_producer_consumer.py
+```
