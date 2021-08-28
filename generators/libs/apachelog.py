@@ -1,7 +1,7 @@
 import re
 from typing import Iterator
 
-from fieldmap import field_map
+from .fieldmap import field_map
 
 LOGPATS = r"(\S+) (\S+) (\S+) \[(.*?)\] " r'"(\S+) (\S+) (\S+)" (\S+) (\S+)'
 LOGPAT = re.compile(LOGPATS)

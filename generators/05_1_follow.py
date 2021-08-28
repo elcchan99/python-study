@@ -1,6 +1,12 @@
-from follow import follow
+from pathlib import Path
 
-logfile = open("www/follow.log")
+from libs.follow import follow
+
+FILE = "www/follow.log"
+
+Path(FILE).touch()
+
+logfile = open(FILE)
 loglines = follow(logfile)
 
 for line in loglines:

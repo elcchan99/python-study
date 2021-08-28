@@ -1,6 +1,6 @@
 import socket
 
-from genpickle import gen_unpickle
+from .genpickle import gen_unpickle
 
 
 def receivefrom(addr: tuple[str, int]):

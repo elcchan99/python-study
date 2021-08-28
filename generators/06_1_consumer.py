@@ -1,4 +1,4 @@
-from receivefrom import receivefrom
+from libs.receivefrom import receivefrom
 
 for r in receivefrom(("localhost", 15000)):
     print(r)

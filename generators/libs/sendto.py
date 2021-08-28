@@ -1,6 +1,6 @@
 import socket
 
-from genpickle import gen_pickle
+from .genpickle import gen_pickle
 
 
 def sendto(source, addr: tuple[str, int]):

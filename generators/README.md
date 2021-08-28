@@ -17,26 +17,18 @@ Link: http://www.dabeaz.com/generators/Generators.pdf
 
 ### 1. Basic iteration protocol
 
-```shell
-python iteration.py
-5 4 3 2 1
+Iteration of `countdown`
+
+```bash
+python 01_1_run_iterator.py
 ```
 
 ### 2. Introduction to generators
 
-```shell
-python iteration.py
-<generator object gen_countdown at 0x1101bcba0>
-Counting down from 5
-5
-4
-3
-2
-1
-Traceback (most recent call last):
-  File "generators/iteration.py", line 45, in <module>
-    print(g.__next__())
-StopIteration
+Iterate a generator version of `countdown`
+
+```bash
+python 02_1_run_generator.py
 ```
 
 ### 3. Fun with files and directories
@@ -44,32 +36,21 @@ StopIteration
 Generate source data: apache logs
 
 ```bash
-> python gen_apache.py -o LOG -d www/ --sleep 0.1 --num 1000
-> python gen_apache.py -o LOG -d www/ --sleep 0.1 --num 250
-> python gen_apache.py -o LOG -d www/ --sleep 0.1 --num 250
-...
+bash 03_1_generate_data.sh
 ```
 
-Create a generator to list all logs from directory
+Create a generator to list logs from directory
 
-```python
->>> from linesdir import lines_from_dir
->>> lines = lines_from_dir(r"access_log_*.log", "www")
->>> next(lines)
->>> next(lines)
->>> next(lines)
+```bash
+python 03_2_read_from_dir.py
 ```
 
 ### 4. Parsing and processing data
 
-```python
->>> from linesdir import lines_from_dir
->>> from apachelog import apache_log
->>> lines = lines_from_dir(r"access_log_*.log", "www")
->>> logs = apache_log(lines)
->>> next(logs)
->>> next(logs)
->>> next(logs)
+Run the below commands to parse apache log from string to dict
+
+```bash
+python 04_1_parse_apache.py
 ```
 
 ### 5. Processing infinite data
@@ -79,8 +60,7 @@ Open two terminals
 One would follow on `www/follow.log` file
 
 ```bash
-touch www/follow.log
-python 05_01_follow.py
+python 05_1_follow.py
 ```
 
 Another would add new lines to file
@@ -104,13 +84,13 @@ Open two terminals
 One would start a consumer that listens to localhost:15000
 
 ```bash
-python consumer.py
+python 06_1_consumer.py
 ```
 
 Another would send apache log dict to localost:15000
 
 ```bash
-python producer.py
+python 06_1_producer.py
 ```
 
 You would see apache log dict is printed in consumer terminal.
