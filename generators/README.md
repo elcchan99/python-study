@@ -315,3 +315,23 @@ Closing it down
 #### 10.1 Incremental parsing
 
 No sample :(
+
+### 11. Coroutine
+
+Generators can receive values using `.send()`
+
+```shell
+> python 11_1_intro_to_coroutine.py
+T-minus 5
+T-minus 4
+T-minus 3
+T-minus 2
+T-minus 1
+Kaboom!
+```
+
+If we comment out `r.send(None)`, error would occur
+
+```
+TypeError: can't send non-None value to a just-started generator
+```
