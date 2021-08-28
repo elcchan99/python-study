@@ -309,3 +309,9 @@ The only way to externally shutdown a generator wouls be to instrument with a fl
 4
 Closing it down
 ```
+
+### 10. Parsing and Printing
+
+#### 10.1 Incremental parsing
+
+No sample :(
