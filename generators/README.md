@@ -49,3 +49,13 @@ Generate source data: apache logs
 > python gen_apache.py -o LOG -d www/ --sleep 0.1 --num 250
 ...
 ```
+
+Create a generator to list all logs from directory
+
+```python
+>>> from linesdir import lines_from_dir
+>>> lines = lines_from_dir(r"access_log_*.log", "www")
+>>> next(lines)
+>>> next(lines)
+>>> next(lines)
+```
