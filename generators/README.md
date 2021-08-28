@@ -351,3 +351,21 @@ T-minus 1
 ...
 Kaboom!
 ```
+
+#### 11.2 broadcast coroutine
+
+```shell
+> python 11_3_coroutine_broadcast.py
+Total bytes 4982
+Total bytes 9934
+Total bytes 14960
+404 28/Aug/2021:16:11:14 +0800 /apps/cart.jsp?appID=5722
+Total bytes 19878
+404 28/Aug/2021:16:11:14 +0800 /wp-content
+Total bytes 24866
+Total bytes 29897
+Total bytes 34900
+Total bytes 39911
+Total bytes 44839
+Total bytes 49790
+```
