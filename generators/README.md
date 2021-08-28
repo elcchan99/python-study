@@ -165,7 +165,7 @@ Cat got 213.190.121.174
 #### 8.3 Consumer thread
 
 ```shell
-ython 08_3_consumer_thread.py
+python 08_3_consumer_thread.py
 404 28/Aug/2021:16:11:14 +0800 /apps/cart.jsp?appID=5722
 404 28/Aug/2021:16:11:14 +0800 /wp-content
 Total bytes 4982
