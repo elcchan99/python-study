@@ -236,3 +236,18 @@ generator.last 2
 current 3
 generator.last 3
 ```
+
+#### 9.3 Shutdown
+
+We could shutdown a generator by calling `generator.close()`
+
+```shell
+> python 09_3_shutdown.py
+0 155.218.119.91
+1 206.229.250.64
+2 213.190.121.174
+3 212.27.13.161
+4 15.75.60.223
+5 158.80.14.166
+Shutting down
+```
