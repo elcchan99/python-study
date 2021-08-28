@@ -71,3 +71,23 @@ Create a generator to list all logs from directory
 >>> next(logs)
 >>> next(logs)
 ```
+
+### 5. Processing infinite data
+
+Open two terminals
+
+One would follow on `www/follow.log` file
+
+```bash
+touch www/follow.log
+python 05_01_follow.py
+```
+
+Another would add new lines to file
+
+```bash
+date >> www/follow.log
+date >> www/follow.log
+```
+
+You shall see date print in the terminal which runs Python
