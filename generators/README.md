@@ -220,3 +220,19 @@ python 09_1_trace.py
 {'host': '212.27.13.161', 'referrer': '-', 'user': '-', 'datetime': '28/Aug/2021:16:11:14 +0800', 'method': 'GET', 'request': '/apps/cart.jsp?appID=5722', 'proto': 'HTTP/1.0', 'status': 404, 'bytes': 4918}
 {'host': '15.75.60.223', 'referrer': '-', 'user': '-', 'datetime': '28/Aug/2021:16:11:14 +0800', 'method': 'GET', 'request': '/wp-content', 'proto': 'HTTP/1.0', 'status': 404, 'bytes': 4988}
 ```
+
+#### 9.2 store last
+
+Create a generator that stores yield last item
+
+```shell
+python 09_2_store_list.py
+current 0
+generator.last 0
+current 1
+generator.last 1
+current 2
+generator.last 2
+current 3
+generator.last 3
+```
