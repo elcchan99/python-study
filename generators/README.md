@@ -261,3 +261,39 @@ We cannot ignore `GeneratorExit`
 edgar
 Follow: Shutting down
 ```
+
+#### 9.5 Shutdown thread generator
+
+We cannot shuwdown a generator in another thread. Error occurs: `ValueError: generator already executing`.
+
+```shell
+python 09_5_shutdown_thread_generator.py
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/Users/edgarchan/.pyenv/versions/3.9.5/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/Users/edgarchan/.pyenv/versions/3.9.5/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/edgarchan/personal/python-study/generators/09_5_shutdown_thread_generator.py", line 16, in sleep_and_close
+    numbers.close()
+ValueError: generator already executing
+10
+11
+12
+13
+14
+15
+16
+17
+18
+```
