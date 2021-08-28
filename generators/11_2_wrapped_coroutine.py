@@ -1,13 +1,5 @@
+from libs.consumercoroutine import consumer
 from libs.recvcount import recv_count
-
-
-def consumer(func):
-    def start(*args, **kwargs):
-        c = func(*args, **kwargs)
-        c.send(None)
-        return c
-
-    return start
 
 
 @consumer
