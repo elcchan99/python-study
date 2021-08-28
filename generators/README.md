@@ -267,7 +267,7 @@ Follow: Shutting down
 We cannot shuwdown a generator in another thread. Error occurs: `ValueError: generator already executing`.
 
 ```shell
-python 09_5_shutdown_thread_generator.py
+> python 09_5_shutdown_thread_generator.py
 0
 1
 2
@@ -296,4 +296,16 @@ ValueError: generator already executing
 16
 17
 18
+```
+
+The only way to externally shutdown a generator wouls be to instrument with a flag or some kind of chunk
+
+```shell
+> python 09_6_shutdown_thread_generator.py
+0
+1
+2
+3
+4
+Closing it down
 ```
