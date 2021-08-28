@@ -91,3 +91,8 @@ date >> www/follow.log
 ```
 
 You shall see date print in the terminal which runs Python
+
+### 6. Feeding the pipeline
+
+- [Generate a sequence of TCP connections](./genreceive.py)
+- [Receive a sequence of UDP messages](./genmessages.py)
