@@ -165,7 +165,7 @@ Cat got 213.190.121.174
 #### 8.3 Consumer thread
 
 ```shell
-python 08_3_consumer_thread.py
+> python 08_3_consumer_thread.py
 404 28/Aug/2021:16:11:14 +0800 /apps/cart.jsp?appID=5722
 404 28/Aug/2021:16:11:14 +0800 /wp-content
 Total bytes 4982
@@ -216,7 +216,7 @@ The two threads are running concurrently. They both sources from broadcasted log
 #### 9.1 trace
 
 ```shell
-python 09_1_trace.py
+> python 09_1_trace.py
 {'host': '212.27.13.161', 'referrer': '-', 'user': '-', 'datetime': '28/Aug/2021:16:11:14 +0800', 'method': 'GET', 'request': '/apps/cart.jsp?appID=5722', 'proto': 'HTTP/1.0', 'status': 404, 'bytes': 4918}
 {'host': '15.75.60.223', 'referrer': '-', 'user': '-', 'datetime': '28/Aug/2021:16:11:14 +0800', 'method': 'GET', 'request': '/wp-content', 'proto': 'HTTP/1.0', 'status': 404, 'bytes': 4988}
 ```
@@ -226,7 +226,7 @@ python 09_1_trace.py
 Create a generator that stores yield last item
 
 ```shell
-python 09_2_store_list.py
+> python 09_2_store_list.py
 current 0
 generator.last 0
 current 1
