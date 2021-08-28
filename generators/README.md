@@ -102,3 +102,47 @@ You would see apache log dict is printed in consumer terminal.
 ```bash
 python 07_2_producer_consumer.py
 ```
+
+### 8 Advanced data routing
+
+Parallel iteration
+
+marginally useful:
+
+```python
+s1 = range(1, 10)
+s2 = range(2, 10, 2)
+s3 = range(3, 10, 3)
+z = zip(s1, s2, s3)
+for e in z:
+    print(e)
+```
+
+Multiplexing
+
+- multiple generators
+- real time productin values as they arrive
+
+```shell
+> python 08_1_multiplex.py
+from odd:  1
+from even:  2
+from odd:  2
+from even:  4
+from odd:  3
+from even:  6
+from odd:  4
+from even:  8
+from odd:  5
+from even:  10
+from odd:  6
+from even:  12
+from odd:  7
+from even:  14
+from odd:  8
+from even:  16
+from odd:  9
+from even:  18
+```
+
+With the `time.sleep`, you can see the result generator takes value from sources interchangablely.
