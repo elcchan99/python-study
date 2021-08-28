@@ -1,5 +1,13 @@
 # Generators
 
+## Get started
+
+Before running any scripts, install dependencies first.
+
+```bash
+poetry install
+```
+
 ## Generator Tricks For Systems Programmers
 
 Author: David Beazley
@@ -29,4 +37,15 @@ Traceback (most recent call last):
   File "generators/iteration.py", line 45, in <module>
     print(g.__next__())
 StopIteration
+```
+
+### 3. Parsing and processing data
+
+Generate source data: apache logs
+
+```bash
+> python gen_apache.py -o LOG -d www/ --sleep 0.1 --num 1000
+> python gen_apache.py -o LOG -d www/ --sleep 0.1 --num 250
+> python gen_apache.py -o LOG -d www/ --sleep 0.1 --num 250
+...
 ```
