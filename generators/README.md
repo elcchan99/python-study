@@ -251,3 +251,13 @@ We could shutdown a generator by calling `generator.close()`
 5 158.80.14.166
 Shutting down
 ```
+
+#### 9.4 Attempt to ignore `GeneratorExit`
+
+We cannot ignore `GeneratorExit`
+
+```shell
+> python 09_4_ignore_generatorexit.py
+edgar
+Follow: Shutting down
+```
