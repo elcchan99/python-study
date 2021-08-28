@@ -96,3 +96,21 @@ You shall see date print in the terminal which runs Python
 
 - [Generate a sequence of TCP connections](./genreceive.py)
 - [Receive a sequence of UDP messages](./genmessages.py)
+
+### 7. Extending the pipeline
+
+Open two terminals
+
+One would start a consumer that listens to localhost:15000
+
+```bash
+python consumer.py
+```
+
+Another would send apache log dict to localost:15000
+
+```bash
+python producer.py
+```
+
+You would see apache log dict is printed in consumer terminal.
