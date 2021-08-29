@@ -156,8 +156,19 @@ Parse xml to turn bus XML to dictionary
 > python 03_2_bus_event_dispatch.py
 ```
 
-#### 3.2 parse bus event and filter
+#### 3.3 parse bus event and filter
 
 ```shell
 > python 03_3_bus_event_dispatch_filter.py
+```
+
+#### 3.4 threaded
+
+Two threads
+
+1. xml -> EventHandler -> buses_to_dicts
+2. filter_on_field -> filter_on_field -> bus_locations
+
+```shell
+> python 03_4_threaded_bus_event.py
 ```
