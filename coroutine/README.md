@@ -114,3 +114,28 @@ Result: only `python rocks!` is printed
 > python 02_2_filter.py
 python rocks
 ```
+
+#### 2.3 broadcasting
+
+Open two terminals
+
+1. One starts to tail the file `follow.log`
+   ```bash
+   python 02_3_broadcast.py
+   ```
+2. Another pushes some lines to the file:
+   ```bash
+   echo "python rocks" >> follow.log
+   date >> follow.log
+   echo "ply ply ply" >> follow.log
+   ```
+
+Result
+
+```shell
+> python 02_3_broadcast.py
+python rocks
+python rocks
+Sun Aug 29 12:41:26 HKT 2021
+ply ply ply
+```
