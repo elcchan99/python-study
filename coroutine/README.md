@@ -155,3 +155,9 @@ Parse xml to turn bus XML to dictionary
 ```shell
 > python 03_2_bus_event_dispatch.py
 ```
+
+#### 3.2 parse bus event and filter
+
+```shell
+> python 03_3_bus_event_dispatch_filter.py
+```

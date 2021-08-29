@@ -24,3 +24,18 @@ def buses_to_dict(target: typing.Coroutine):
                     else:
                         target.send(busdict)
                         break
+
+
+@coroutine
+def filter_on_field(fieldname: str, value, target: typing.Coroutine):
+    while True:
+        dictionary = yield
+        if dictionary.get(fieldname) == value:
+            target.send(dictionary)
+
+
+@coroutine
+def bus_locations():
+    while True:
+        bus = yield
+        print('%(route)s,%(id)s,"%(direction)s",' "%(latitude)s,%(longitude)s" % bus)
