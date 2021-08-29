@@ -147,3 +147,11 @@ ply ply ply
 ```shell
 > python 03_1_sample_xml_sax.py
 ```
+
+#### 3.2 parse bus event
+
+Parse xml to turn bus XML to dictionary
+
+```shell
+> python 03_2_bus_event_dispatch.py
+```
