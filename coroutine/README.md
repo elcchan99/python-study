@@ -75,8 +75,15 @@ Counting down from 5
 
 Open two terminals
 
-1. One starts to tail the file `follow.log` :`python 02_1_follow_print.py`.
-2. Another pushes some line to the file: `date >> follow.log`.
+1. One starts to tail the file `follow.log`
+   ```bash
+   python 02_1_follow_print.py
+   ```
+1. Another pushes some lines to the file
+   ```bash
+   date >> follow.log
+   date >> follow.log
+   ```
 
 Result
 
@@ -84,4 +91,26 @@ Result
 > python 02_1_follow_print.py
 Sun Aug 29 12:14:29 HKT 2021
 Sun Aug 29 12:14:46 HKT 2021
+```
+
+#### 2.2 add filter
+
+Open two terminals
+
+1. One starts to tail the file `follow.log`
+   ```bash
+   python 02_1_follow_print.py
+   ```
+2. Another pushes some lines to the file:
+   ```bash
+   date >> follow.log
+   echo "python rocks!" >> follow.log
+   date >> follow.log
+   ```
+
+Result: only `python rocks!` is printed
+
+```shell
+> python 02_2_filter.py
+python rocks
 ```
