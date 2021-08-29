@@ -1,5 +1,5 @@
 import typing
-from .coroutine import corotine
+from .coroutine import coroutine
 
 
 def raw_grep(pattern: str) -> typing.Coroutine:
@@ -10,7 +10,7 @@ def raw_grep(pattern: str) -> typing.Coroutine:
             print(line)
 
 
-@corotine
+@coroutine
 def grep(pattern: str) -> typing.Coroutine:
     print(f"Looking for {pattern}")
     while True:
