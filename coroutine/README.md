@@ -37,3 +37,19 @@ We call `next(coroutine)` in decorator.
 Looking for python
 python generators rock!
 ```
+
+#### 1.3 throwing an exception
+
+We could raise an exception, which originates at the yield expression.
+This kind of exception can be caught/ handled in the usual ways.
+
+```shell
+> python 01_3_throw_exception.py
+Looking for python
+Traceback (most recent call last):
+  File "/Users/edgarchan/personal/python-study/coroutine/01_3_throw_exception.py", line 8, in <module>
+    g.throw(RuntimeError, "You're hosed")
+  File "/Users/edgarchan/personal/python-study/coroutine/libs/grep.py", line 17, in grep
+    line = yield
+RuntimeError: You're hosed
+```
