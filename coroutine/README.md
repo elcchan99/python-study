@@ -139,3 +139,11 @@ python rocks
 Sun Aug 29 12:41:26 HKT 2021
 ply ply ply
 ```
+
+### 3. Coroutines and Event dispatching
+
+#### 3.1 minimal SAX example
+
+```shell
+> python 03_1_sample_xml_sax.py
+```
