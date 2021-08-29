@@ -172,3 +172,9 @@ Two threads
 ```shell
 > python 03_4_threaded_bus_event.py
 ```
+
+#### 3.5 bridge coroutines over a file/ pipe
+
+See `libs/coprocess.py`.
+
+This has high cost of the underlying communication.
