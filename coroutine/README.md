@@ -27,3 +27,13 @@ We need to call `grep.__next__()` to kick start it.
 Looking for python
 python generators rock!
 ```
+
+#### 1.2 decorated coroutine
+
+We call `next(coroutine)` in decorator.
+
+```shell
+> python 01_2_decorated_coroutine.py
+Looking for python
+python generators rock!
+```
