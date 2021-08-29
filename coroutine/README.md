@@ -66,3 +66,22 @@ Counting down from 5
 1
 0
 ```
+
+### 2. Coroutines, pipeline and dataflow
+
+#### 2.1 sample pipeline
+
+`follow |> printer`
+
+Open two terminals
+
+1. One starts to tail the file `follow.log` :`python 02_1_follow_print.py`.
+2. Another pushes some line to the file: `date >> follow.log`.
+
+Result
+
+```shell
+> python 02_1_follow_print.py
+Sun Aug 29 12:14:29 HKT 2021
+Sun Aug 29 12:14:46 HKT 2021
+```
