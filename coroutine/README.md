@@ -53,3 +53,16 @@ Traceback (most recent call last):
     line = yield
 RuntimeError: You're hosed
 ```
+
+#### 1.4 generator that produces and receives
+
+It runs, but its
+
+```shell
+> python 01_4_bogus_example.py
+Counting down from 5
+5
+2
+1
+0
+```
